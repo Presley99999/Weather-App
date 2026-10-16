@@ -19,7 +19,7 @@ import com.example.weatherapp.models.DailyForecast
 fun ForecastScreen() {
 
     val weekForecast = listOf(
-        DailyForecast("Mon", "10°C", R.drawable.sunny),
+        DailyForecast("Mon", "12°C", R.drawable.sunny),
         DailyForecast("Tue", "8°C", R.drawable.cloudy),
         DailyForecast("Wed", "6°C", R.drawable.rain),
         DailyForecast("Thu", "4°C", R.drawable.snow),
@@ -31,7 +31,7 @@ fun ForecastScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF87CEEB)) // same background color
+            .background(Color(0xFF87CEEB))
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

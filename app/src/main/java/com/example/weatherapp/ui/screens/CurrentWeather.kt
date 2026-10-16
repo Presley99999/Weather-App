@@ -25,7 +25,7 @@ fun CurrentWeatherScreen(onNavigateToForecast: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text("Halifax", fontSize = 32.sp, fontWeight = FontWeight.Bold)
+        Text("Dartmouth", fontSize = 32.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(16.dp))
 
         Icon(
