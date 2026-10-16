@@ -35,21 +35,21 @@ fun ForecastScreen() {
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("7‑Day Forecast", fontSize = 32.sp, fontWeight = FontWeight.Bold)
+        Text("Daily Forecast", fontSize = 32.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(24.dp))
 
         weekForecast.forEach { day ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 12.dp),
+                    .padding(vertical = 24.dp),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(day.day, fontSize = 20.sp)
 
                 Icon(
-                    painter = painterResource(id = day.iconRes),
+                    painter = painterResource(id = day.resourceId),
                     contentDescription = day.day,
                     modifier = Modifier.size(40.dp)
                 )

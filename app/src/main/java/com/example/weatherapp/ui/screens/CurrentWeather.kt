@@ -2,7 +2,6 @@ package com.example.weatherapp.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -16,11 +15,11 @@ import androidx.compose.ui.unit.sp
 import com.example.weatherapp.R
 
 @Composable
-fun CurrentWeatherScreen(onNavigateToForecast: () -> Unit) {
+fun CurrentWeatherScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF87CEEB)) // sky blue background
+            .background(Color(0xFF87CEEB)) // I want to make the background dynamic based on the current weather
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
